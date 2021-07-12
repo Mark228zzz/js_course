@@ -30,31 +30,66 @@ age = '37'
 // console.log(y / z)
 // console.log(y * z)
 
-let x, y, z, oper
+// let x, y, z, oper
 
-x = prompt('Type first numver')
-y = prompt('Type second numver')
-oper = prompt('Type an operator')
+// x = prompt('Type first numver')
+// y = prompt('Type second numver')
+// oper = prompt('Type an operator')
 
-if(oper=='+'){
-    z = Number(x) + Number(y)
-}
+// if(oper=='+'){
+//     z = Number(x) + Number(y)
+// }
 
-if(oper=='-'){
-    z = Number(x) - Number(y)
-}
+// if(oper=='-'){
+//     z = Number(x) - Number(y)
+// }
 
-if(oper=='/'){
-    z = Number(x) / Number(y)
-}
+// if(oper=='/'){
+//     z = Number(x) / Number(y)
+// }
 
-if(oper=='*'){
-    z = Number(x) * Number(y)
-}
+// if(oper=='*'){
+//     z = Number(x) * Number(y)
+// }
 
-alert('Your number is: ' + z)
+// alert('Your number is: ' + z)
 
-let h = 6
+let x = 6
+let y = 3
 
-console.lag(x++)
-console.lag(x)
+console.log(x += y)
+
+x = 6
+y = 3
+
+console.log(x -= y)
+
+x = 6
+y = 3
+
+console.log(x *= y)
+
+x = 6
+y = 3
+
+console.log(x /= y)
+
+// 3 data types 
+
+const boolean = true
+const string = 'Sasha'
+const number = 35
+let p
+let a = null
+const array = []
+const obj = {}
+const bigInt = sd12341312313132141241244141341324152535n
+
+console.log(typeof boolean)
+console.log(typeof string)
+console.log(typeof number)
+console.log(typeof p)
+console.log(typeof a)
+console.log(typeof array)
+console.log(typeof obj)
+console.log( bigInt)
