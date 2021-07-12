@@ -31,6 +31,7 @@ age = '37'
 // console.log(y * z)
 
 let x, y, z, oper
+
 x = prompt('Type first numver')
 y = prompt('Type second numver')
 oper = prompt('Type an operator')
@@ -53,7 +54,7 @@ if(oper=='*'){
 
 alert('Your number is: ' + z)
 
-let x = 6
+let h = 6
 
 console.lag(x++)
 console.lag(x)
