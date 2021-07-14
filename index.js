@@ -218,6 +218,36 @@
 // array[3] = 'masha'
 // console.log(array)
 
+// const user = {
+//     firstName: 'Mark',
+//     lastName: 'Mazur',
+//     DOB: 2007,
+//     gender: 'male',
+//     status: 'single',
+//     russion: true,
+//     eat: function(){
+//         console.log('I an going eat')
+//     },
+//     lang: ['en', 'ru']
+// }
+
+// console.log(user.firstName + ' ' + user.lastName)
+
+// console.log(user.russion + ' ' + user.gender)
+
+// console.log(user.firstName + ' ' + user.lastName + ' ' + user.DOB + ' ' + user.russion)
+// user.eat()
+
+// user.firstName = 'masha'
+
+// // console.log(user) this is full object
+// console.log(user)
+
+// // firstName this is key
+// console.log(user['firstName'])
+
+// console.log(user.lang)
+
 
 // 6 for
 
@@ -248,33 +278,3 @@
 // for (let name of names){
 //     console.log(name)
 // }
-
-const user = {
-    firstName: 'Mark',
-    lastName: 'Mazur',
-    DOB: 2007,
-    gender: 'male',
-    status: 'single',
-    russion: true,
-    eat: function(){
-        console.log('I an going eat')
-    },
-    lang: ['en', 'ru']
-}
-
-console.log(user.firstName + ' ' + user.lastName)
-
-console.log(user.russion + ' ' + user.gender)
-
-console.log(user.firstName + ' ' + user.lastName + ' ' + user.DOB + ' ' + user.russion)
-user.eat()
-
-user.firstName = 'masha'
-
-// console.log(user) this is full object
-console.log(user)
-
-// firstName this is key
-console.log(user['firstName'])
-
-console.log(user.lang)
