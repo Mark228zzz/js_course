@@ -186,9 +186,9 @@
 // function info(firstName, lastName){
 //     const age = calculateAge(35)
 //     if (age < 0) {
-//         console.log('age cant be less then zerro')
+//         console.log('age cant be less then zero')
 //     } else if (age > 90) {
-//         console.log('yor older man')
+//         console.log('you older man')
 //     }
 //     const name = fullName(firstName, lastName)
 //     console.log('My age: ' + age + name)
@@ -226,7 +226,7 @@
 //     status: 'single',
 //     russion: true,
 //     eat: function(){
-//         console.log('I an going eat')
+//         console.log('I am going to eat')
 //     },
 //     lang: ['en', 'ru']
 // }
@@ -243,7 +243,7 @@
 // // console.log(user) this is full object
 // console.log(user)
 
-// // firstName this is key
+// // firstName this is akey
 // console.log(user['firstName'])
 
 // console.log(user.lang)
@@ -278,3 +278,4 @@
 // for (let name of names){
 //     console.log(name)
 // }
+
