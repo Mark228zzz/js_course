@@ -146,7 +146,7 @@
 // isReady ? console.log('ok') : console.log('error')
 
 
-// functions
+// 4 functions
 
 // const number = 100
 
@@ -174,26 +174,107 @@
 // console.log(calculate1(0) / calculate2(0)) // 1
 
 
-const number = 1000
+// const number = 100
 
-function calculateAge(myAge){
-    return number - myAge
-}
-function fullName(firstName , lastName){
-    return '.My full name is ' + firstName + lastName
+// function calculateAge(myAge){
+//     return number - myAge
+// }
+// function fullName(firstName , lastName){
+//     return '.My full name is ' + firstName + lastName
+// }
+
+// function info(firstName, lastName){
+//     const age = calculateAge(35)
+//     if (age < 0) {
+//         console.log('age cant be less then zerro')
+//     } else if (age > 90) {
+//         console.log('yor older man')
+//     }
+//     const name = fullName(firstName, lastName)
+//     console.log('My age: ' + age + name)
+// }
+
+// info('Mark', ' Mazur')
+// info('Masha', ' red')
+// info('dasha', ' green')
+
+
+// 5 array
+
+//               0        1        2    
+// const array = ['mark', 'mazur', 'sasha']
+
+// console.log(array)
+
+// // 0, 1, 2, 3 this is index
+
+// console.log(array[0])
+// console.log(array[1])
+// console.log(array[2])
+// console.log(array[3])
+
+// console.log(array.length)
+// array[0] = 'artem'
+// array[3] = 'masha'
+// console.log(array)
+
+
+// 6 for
+
+//               0        1        2 
+// const names = ['mark', 'mazur', 'sasha']
+
+// for (let i = 0; i < names.length; i++){
+//     console.log(i)
+// }
+
+// // 0, 1, 2...9
+// for (let i = 0; i < 10; i++){
+//     console.log(i)
+// }
+
+// console.log(' ')
+
+// // 0, 1, 2...10
+// for (let i = 0; i <= 10; i++){
+//     console.log(i)
+// }
+
+// // 0 - mark, 1 - mazur, 2 - sasha, undefined 3 - ???, 4 - ???...10 - ???  
+// for (let i = 0; i <= 10; i++){
+//     console.log(names[i])
+// }
+
+// for (let name of names){
+//     console.log(name)
+// }
+
+const user = {
+    firstName: 'Mark',
+    lastName: 'Mazur',
+    DOB: 2007,
+    gender: 'male',
+    status: 'single',
+    russion: true,
+    eat: function(){
+        console.log('I an going eat')
+    },
+    lang: ['en', 'ru']
 }
 
-function info(firstName, lastName){
-    const age = calculateAge(35)
-    if (age < 0) {
-        console.log('age cant be less then zerro')
-    } else if (age > 90) {
-        console.log('yor older man')
-    }
-    const name = fullName(firstName, lastName)
-    console.log('My age: ' + age + name)
-}
+console.log(user.firstName + ' ' + user.lastName)
 
-info('Mark', ' Mazur')
-info('Masha', ' red')
-info('dasha', ' green')
+console.log(user.russion + ' ' + user.gender)
+
+console.log(user.firstName + ' ' + user.lastName + ' ' + user.DOB + ' ' + user.russion)
+user.eat()
+
+user.firstName = 'masha'
+
+// console.log(user) this is full object
+console.log(user)
+
+// firstName this is key
+console.log(user['firstName'])
+
+console.log(user.lang)
