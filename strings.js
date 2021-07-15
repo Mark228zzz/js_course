@@ -52,3 +52,25 @@
 // console.log(firstName.trim()) // Mark
 // console.log(firstName.trimLeft()) // Mark 
 // console.log(firstName.trimRight()) //  Mark
+
+// function getInfo(data, name, age){
+//     return `${data[0]}${name}${data[1]}${age}${data[2]}`
+// }
+
+// function getInfo2(name, age){
+//     return `Name: ${name}, Age: ${age}`
+// }
+
+// const firstName1 = 'Mark'
+// const firstName2 = 'Mazur'
+
+// const age1 = 35
+// const age2 = 25
+
+// const result1 = getInfo `Name: ${firstName1}, Age: ${age1}!`
+// const result2 = getInfo `Name: ${firstName2}, Age: ${age2}!`
+// const result3 = getInfo2(firstName1, age1)
+
+// console.log(result1)
+// console.log(result2)
+// console.log(result3)
