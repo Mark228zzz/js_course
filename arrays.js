@@ -2,10 +2,14 @@
 // arrays
 
 const array1 = ['Mark', 'Mazur', 'Dasha', 'Masha']
-const array2 = [1, 2, 3, 4, 5, 6]
-const array3 = [true, false, false, true]
-const array4 = [['M', 'a', 'r', 'k'], [true, false, false, true], [1, 2, 3, 4, 5, 6], [true, 1, 1000000, 'sdagdfsfwsefe']]
-const array5 = [{'M':'a'}, {'r':'k'}, {'M':'a'}, {'r':'k'}]
+// const array7 = ['Mark', 'Mazur', 'Dasha', 'Masha']
+// const array8 = ['Mark', 'Mazur', 'Dasha', 'Masha']
+// const array9 = ['Mark', 'Mazur', 'Dasha', 'Masha']
+// const array10 = ['Mark', 'Mazur', 'Dasha', 'Masha']
+// const array2 = [1, 2, 3, 4, 5, 6]
+// const array3 = [true, false, false, true]
+// const array4 = [['M', 'a', 'r', 'k'], [true, false, false, true], [1, 2, 3, 4, 5, 6], [true, 1, 1000000, 'sdagdfsfwsefe']]
+// const array5 = [{'M':'a'}, {'r':'k'}, {'M':'a'}, {'r':'k'}]
 
 // // add olia in array1
 // // push - add at the end array
@@ -55,3 +59,81 @@ const array5 = [{'M':'a'}, {'r':'k'}, {'M':'a'}, {'r':'k'}]
 // console.log(x)
 // console.log(array1)
 
+// const users = [
+//     { name: 'Mark',  age: 25 },
+//     { name: 'Mazur', age: 35 },
+//     { name: 'Dasha', age: 30 },
+//     { name: 'Masha', age: 55 }
+// ]
+
+// const array = []
+// const array6 = []
+
+// const resultIndex1 = users.findIndex(function(user) {
+//     return user.age >= 30
+// })
+
+// const resultIndex2 = users.findIndex(function(user) {
+//     if(user.age >= 30) {
+//         array.push(user)
+//     }
+    
+// })
+
+// const resultIndex3 = users.find(function(user) {
+//     return user.age === 30
+// })
+
+// const resultIndex4 = users.filter( user => user.age >= 30 )
+
+// console.log(users[resultIndex1])
+// console.log(array)
+// console.log(resultIndex3)
+// console.log(resultIndex4)
+
+// console.log(array1.includes('Dasha')) // true
+// console.log(array1.includes('dasha')) // false
+
+// const upperCase = name => name.toUpperCase()
+
+// const newArray1 = array1.map(upperCase)
+// const newArray2 = array7.map(upperCase)
+// const newArray3 = array8.map(upperCase)
+// const newArray4 = array9.map(upperCase)
+// const newArray5 = array10.map(upperCase)
+
+// console.log(array1)
+// console.log(newArray1)
+// console.log(newArray2)
+// console.log(newArray3)
+// console.log(newArray4)
+// console.log(newArray5)
+
+// const upperCase = data => data.toUpperCase()
+// const newArray = array1.map(upperCase).find(user => user === 'MAZUR')
+// console.log(newArray)
+
+// const upperCase = data => data.toUpperCase()
+// const newArray = array1
+// .map(upperCase)
+// .find((user) => user === 'MARk')
+// .split('')
+// .reverse()
+// .join('-')
+
+// console.log(newArray)
+
+// const users = [
+//     { name: 'Mark', age: 23, year: 2007  },
+//     { name: 'Mazur', age: 21, year: 1400 },
+//     { name: 'Masha', age: -8, year: 1563 }
+// ]
+
+// const sorts = users.sort(function(a,b) {
+//     return a.year - b.year
+// })
+
+// const sorts2 = users.sort((a, b) => a.year - b.year)
+
+// console.log(sorts)
+// console.log(sorts2)
