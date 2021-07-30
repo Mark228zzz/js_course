@@ -94,7 +94,7 @@
 // }
 
 // const tempestString = 'и как хорош тот новый мир, где есть такие люди!'
-// const monthString = 'January,February,March,April,May,June,July,August,September,October,November,December'
+// const monthString = 'January,February,March,April,May,June,July,August,September,October,November,December' 
 
 // const space = ' '
 // const comma = ','
