@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wedth=device-wedth, initial-scale=1.0" />
+    <title>fundamentals vue</title>
+    <link rel="stylesheet" href="theme_2.css" />
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container pt-5" id="app" v-cloak>
+        <div class="card center">
+         <ul class="list" v-if="items.length">
+             <h1 v-html="myHtml"></h1>
+
+            <div class=form-control>
+                <input type="text" @keyup.shift.enter.exact="addItem($event)" ref="myInput">
+            </div>
+
+                <li class="list-item" v-for="(item, i) in items" @click.right.prevent="remove(i), log(item)" :key="item">
+                    <strong>{{ item }}</strong>&nbsp;
+                    <input type="text" @click.stop>
+                </li>
+            </ul>
+            <h2 style="color: red;" v-show="items.length === 0" v-else>no items</h2>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app_2.js"></script>
+    </body>
+</html>
