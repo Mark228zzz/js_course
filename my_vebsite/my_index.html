@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="wedth=device-wedth, initial-scale=1.0" />
+    <title>vebsite</title>
+    <link rel="stylesheet" href="my_theme.css" />
+</head>
+<body>
+    <div class="conteiner pt-5" id="app">
+        <div class="card center">
+            <h1>{{ title }}: {{ counter }}</h1>
+            <div>
+                <button class="btn primary" v-on:click="counter += 10">add 10</button>
+                <button class="btn primary" v-on:click="counter++">add 1</button>
+                <button class="btn warning" v-on:click="counter = 0">set 0</button>
+                <button class="btn danger" v-on:click="counter--">remove -1</button>
+                <button class="btn danger" v-on:click="counter -= 10">remove -10</button> 
+            </div>
+            <h2></h2>
+            <div>
+                <br>
+                <button class="btn" v-on:dblclick="">g</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="my_app.js"></script>
+    </body>
+</html>
