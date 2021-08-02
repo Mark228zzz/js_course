@@ -231,7 +231,7 @@ h3 {
 }
 
 .list-item:hover {
-    background: #eee;
+    background: rgb(255, 0, 0);
 }
 
 .alert {
@@ -276,7 +276,7 @@ h3 {
     top: 60px;
     width: 600px;
     padding: 1rem;
-    background: #fff;
+    background: rgb(255, 0, 0);
     z-index: 1000;
     left: 50%;
     border-radius: 10px;
@@ -301,10 +301,10 @@ h3 {
     font-size: 10px;
     margin: 50px auto;
     text-indent: -9999em;
-    width: 11em;
+    width: 19em;
     height: 11em;
     border-radius: 50%;
-    background: #ffffff;
+    background: #ff0000;
     background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
     background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
     background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
