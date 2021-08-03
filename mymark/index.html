@@ -19,14 +19,16 @@
                     @keypress.enter="addNewNote"
                 />
                 <button class="btn" v-on:click="addNewNote">save</button>
+                <button class="btn" v-on:click="removeNote">remove all notes</button>
             </div>
             <ul class="list">
                 <li class="list-item" v-for="myNote in notes">
-                    {{ myNote }}
+                    {{ myNote }} <br> <br>
                 </li>
             </ul>
             <div>
-                <button class="btn" @click="counter += 1">Добавить 1</button>
+                <button class="btn" @click="counter += 1">add 1</button>
+                <button class="btn" @click="counter -= 1">remove 1</button>
                     <p>Кнопка выше была нажата {{ counter }} раз</p>
             </div>
             <div>
@@ -35,9 +37,9 @@
                 <br><br>
             </div> 
             <div>
-                <input v-model="message" placeholder="" />
-                    <p>Сообщение: {{ message }}</p>
-                    <p>Сообщение: {{ inputValue }}</p>
+                <input v-model="message" placeholder="123" />
+                    <p>Сообщение 1: {{ message }}</p>
+                    <p>Сообщение 2: {{ inputValue }}</p>
               </div>
               <div>
                 <span>Многострочное сообщение:</span>
@@ -48,23 +50,23 @@
               <div>
                 <input type="checkbox" id="checkbox" v-model="checked1" />
                 <label for="checkbox"> are u eating? :{{ checked1 }}</label>                
-              </div>
-              <div>
-                <input type="checkbox" id="checkbox" v-model="checked2" />
-                <label for="checkbox"> are u here? :{{ checked2 }} </label>
-                <br><br>
-              </div>
-              <div id="v-model-multiple-checkboxes">
-                  <input type="checkbox" id="jack" value="Джек" v-model="checkedNames" />
-                  <label for="jack">Джек</label>
-                  <input type="checkbox" id="john" value="Джон" v-model="checkedNames" />
-                  <label for="john">Джон</label>
-                  <input type="checkbox" id="mike" value="Майк" v-model="checkedNames" />
-                  <label for="mike">Майк</label>
-                <br /><br />
-                <span>Отмеченные имена: {{ checkedNames }}</span>
-                <br /><br />
-            </div> 
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox" v-model="checked2" />
+                    <label for="checkbox"> are u here? :{{ checked2 }} </label>
+                    <br><br>
+                </div>
+                <div id="v-model-multiple-checkboxes">
+                    <input type="checkbox" id="jack" value="Джек" v-model="checkedNames" />
+                    <label for="jack">Джек</label>
+                    <input type="checkbox" id="john" value="Джон" v-model="checkedNames" />
+                    <label for="john">Джон</label>
+                    <input type="checkbox" id="mike" value="Майк" v-model="checkedNames" />
+                    <label for="mike">Майк</label>
+                    <br /><br />
+                    <span>Отмеченные имена: {{ checkedNames }}</span>
+                    <br /><br />
+                </div> 
                 <div id="v-model-radiobutton">
                     <input type="radio" id="yes" value="yes" v-model="picked" />
                     <label for="yes">yes</label>
@@ -112,9 +114,50 @@
                         <span>Выбрано: {{ selected3 }}</span>
                     </div>
                     <div>
-                        <input type="radio" v-model="pick" :value="a" />
+                        <input type="radio" v-model="pick" :value="a" /> <br><br>
                     </div>
+                    <div id="v-model-radiobutton">
+                        <input type="number" id="1000" value="1" v-model="picked2" />
+                        <label for="your number"></label>
+                        <br>
+                        <span>your age : {{ picked2 }}</span>
+                        <br><br>
+                    </div>
+                    type search
+                    <div>
+                        <input type="search" value="" placeholder="123456789">
+                    </div>
+                    type password
+                    <div>
+                        <input type="password" value="" placeholder="">
+                    </div>
+                    type data
+                    <div>
+                        <input type="date" value="" placeholder="">
+                    </div>
+                    type color
+                    <div>
+                        <input type="color" value="" placeholder="">
+                    </div>
+                    <div id="v-model-multiple-checkboxes2">
+                        <input type="checkbox" id="1" value="1" v-model="checkedNames2" />
+                        <label for="1">1</label>
+                        <input type="checkbox" id="2" value="2" v-model="checkedNames2" />
+                        <label for="2">2</label>
+                        <input type="checkbox" id="3" value="3" v-model="checkedNames2" />
+                        <label for="3">3</label>
+                        <input type="checkbox" id="4" value="4" v-model="checkedNames2" />
+                        <label for="4">4</label>
+                        <input type="checkbox" id="5" value="5" v-model="checkedNames2" />
+                        <label for="5">5</label>
+                        <input type="checkbox" id="6" value="6" v-model="checkedNames2" />
+                        <label for="6">6</label>
+                        <br /><br />
+                        <span> total : {{ checkedNames2 }}</span>
+                        <br /><br />
+                    </div> 
                     <h1>to be continued...</h1>
+            </div>
         </div>
     </div>
 

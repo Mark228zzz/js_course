@@ -15,7 +15,6 @@ const App = {
             picked: '',
             selected: '',
             selected2: '',
-            selected3: '',
             options: [
                 { text: 'one', value: 'three' },
                 { text: 'two', value: 'one' },
@@ -23,7 +22,9 @@ const App = {
                 { text: 'what', value: 'wait' }
             ],
             currentTab: 'Home',
-            tabs: ['Home', 'Posts', 'Archive']
+            tabs: ['Home', 'Posts', 'Archive'],
+            picked2: '',
+            checkedNames2: []
         }
     },
     methods: {
@@ -32,6 +33,10 @@ const App = {
                 this.notes.push(this.inputValue)
                 this.inputValue = ''
             }
+        },
+        removeNote() {
+            (this.inputValue !== '') 
+            this.notes.splice(this.inputValue)
         }
     }
 }
