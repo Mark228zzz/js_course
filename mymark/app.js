@@ -3,9 +3,11 @@ const App = {
         return {
             h: 0,
             counter: 0,
+            counter221: 0,
             placeholderString: 'name your note',
             title: 'list notes',
             inputValue: '',
+            inputValue2212: '',
             notes: [],
             message: '',
             message2: '',
@@ -34,9 +36,18 @@ const App = {
                 this.inputValue = ''
             }
         },
-        removeNote() {
+        removeNotes() {
             (this.inputValue !== '') 
             this.notes.splice(this.inputValue)
+        },
+        buttonIW() {
+            alert('im working!')
+        },
+        buttonINW() {
+            alert('im not working!')
+        },
+        dontPress() {
+            alert('I told you not to press')
         }
     }
 }

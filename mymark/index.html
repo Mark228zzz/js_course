@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-15" />
     <meta name="viewport" content="wedth=device-wedth, initial-scale=1.0" />
     <title>fundamentals vue</title>
     <link rel="stylesheet" href="theme.css" />
@@ -18,18 +18,21 @@
                     v-model="inputValue"
                     @keypress.enter="addNewNote"
                 />
-                <button class="btn" v-on:click="addNewNote">save</button>
-                <button class="btn" v-on:click="removeNote">remove all notes</button>
+                <button class="btn" v-on:click="addNewNote" v-if="counter == 2">save</button>
+                <button class="btn" v-on:click="removeNotes" v-if="counter == 30">remove all notes</button>
+
             </div>
             <ul class="list">
                 <li class="list-item" v-for="myNote in notes">
-                    {{ myNote }} <br> <br>
+                    {{ myNote }}
                 </li>
             </ul>
             <div>
                 <button class="btn" @click="counter += 1">add 1</button>
                 <button class="btn" @click="counter -= 1">remove 1</button>
                     <p>Кнопка выше была нажата {{ counter }} раз</p>
+                    <p>if you double click on the button, the button will open save</p>
+                    <p>if you press the button thirty times, the delete button will open</p>
             </div>
             <div>
                 <button class="btn" @click="say('hi')">Скажи hi</button>
@@ -121,6 +124,7 @@
                         <label for="your number"></label>
                         <br>
                         <span>your age : {{ picked2 }}</span>
+                        <h3 v-if="picked2 > 75">you are very old man</h3>
                         <br><br>
                     </div>
                     type search
@@ -153,11 +157,31 @@
                         <input type="checkbox" id="6" value="6" v-model="checkedNames2" />
                         <label for="6">6</label>
                         <br /><br />
-                        <span> total : {{ checkedNames2 }}</span>
-                        <br /><br />
-                    </div> 
-                    <h1>to be continued...</h1>
-            </div>
+                        <span>
+                            {{ checkedNames2 }}
+                        </span> <br><br>
+                    </div>
+                    <div>
+                        <button class="btn" style="color: goldenrod;" v-on:click="buttonIW">im working!</button>
+                        <button class="btn" style="color: slateblue;" v-on:click="buttonINW">im not working!</button> <br><br>
+                    </div>
+                    <div>
+                        <button class="btn" v-on:click="counter221 += 1" v-if="counter221 < 22">don't press me</button>
+                    </div>
+                    <h4 v-if="counter221 == 1">Better not</h4>
+                    <h4 v-if="counter221 == 4">enough</h4>
+                    <h3 v-if="counter221 == 7">you stop?</h3>
+                    <h3 v-if="counter221 == 10">You were told to stop</h3>
+                    <h2 v-if="counter221 == 15">enough!</h2>
+                    <h1 v-if="counter221 == 20">I will delete the button and images now!!!!!</h1> 
+                    <h1 v-if="counter221 == 22" style="color: red;">DOKLIKALSA</h1> 
+                    __________________________________________
+                    <img v-if="counter221 < 22" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.3eAQ3_DPcKosRzKnrb1N7AHaEo%26pid%3DApi&f=1" alt="asqwds">
+                    <img v-if="counter221 < 22" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.RDDjMBobCM17dpGkdXO-DgHaFj%26pid%3DApi&f=1" alt="asqwds">
+                    <img v-if="counter221 < 22" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WvskZ1s1b-nG-FTLtnMvLwHaEo%26pid%3DApi&f=1" alt="asqwds">
+                    <p><h2 v-if="counter221 == 22">no image</h2></p>
+                    <p><h2 v-if="counter221 == 22">no image</h2></p>
+                    <p><h2 v-if="counter221 == 22">no image</h2></p>
         </div>
     </div>
 
