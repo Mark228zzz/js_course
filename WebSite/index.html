@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="wedth=device-wedth, initial-scale=1.0" />
+    <title>fundamentals vue</title>
+    <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+    <div class="container pt-5" id="app">
+        <div class="card center">
+            {{ counter1 }}
+            <div><br>
+                <button class="btn" v-on:click="counter1 += 1">add 1</button>
+                <button class="btn" v-on:click="counter1 = 0">set 0</button>
+                <button class="btn" v-on:click="counter1 -= 1">remove 1</button>
+            </div>
+            {{ counter2 }}
+            <div> <br>
+                <button class="btn" v-on:click="counter2 += 1" v-if="counter1 == 12">add 1</button>
+                <button class="btn" v-on:click="counter2 = 0" v-if="counter1 == 10">set 0</button>
+                <button class="btn" v-on:click="counter2 -= 1" v-if="counter1 == -12">remove 1</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
